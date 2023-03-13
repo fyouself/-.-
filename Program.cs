@@ -26,4 +26,5 @@ for (int i = 0; i < n; i++)
     }
 }
 
-
+System.Console.WriteLine($"[{string.Join(", ", arrayWords)}]");
+System.Console.WriteLine($"[{string.Join(", ", newArray)}]");
