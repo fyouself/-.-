@@ -14,18 +14,3 @@ for (int i = 0; i < n; i++)
     arrayWords[i] = Convert.ToString(Console.ReadLine());
     if (arrayWords[i].Length <= 3) count++;
 }
-
-string[] newArray = new string[count];
-int j = 0;
-for (int i = 0; i < n; i++)
-{
-    if (arrayWords[i].Length <= 3)
-    {
-        newArray[j] = arrayWords[i];
-        j++;
-    }
-}
-
-
-System.Console.WriteLine($"[{string.Join(", ", arrayWords)}]");
-System.Console.WriteLine($"[{string.Join(", ", newArray)}]");
